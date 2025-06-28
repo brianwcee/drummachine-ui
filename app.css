@@ -1,0 +1,188 @@
+.mpc {
+  display: flex;
+}
+
+.screen {
+  width: 500px;
+  height: 200px;
+  background: #000;
+  margin-right: 10px;
+  align-items: center;
+  background: green;
+  padding: 10px;
+}
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.screen-view div {
+  padding: 0 40px 0 30px;
+}
+
+.screen-view {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px; //combines previous two lines if same
+}
+
+.screen-view-bottom {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px; //combines previous two lines
+}
+
+.screen-box {
+  width: 95%;
+  margin: 0 auto;
+  max-height: 170px;
+  height: 100%;
+  border: 1px solid;
+  box-shadow: 0px 2px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.screen-view-bottom div {
+  border: 1px solid;
+}
+
+.screen-view-bottom.f-controls div {
+  border: none;
+}
+
+.screen-view-bottom.f-controls button {
+  padding: 5px 10px ;
+}
+
+.wheel-spin {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1665deg);
+  }
+}
+
+.drumpads {
+  width: 800px;
+  height: 800px;
+  border: 1px solid;
+  display: flex;
+  background: #333;
+}
+
+.wheel {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.wheel-controls {
+  height: 300px;
+  margin: 20px 0;
+}
+.wheel-button {
+  margin-right: 90px;
+}
+
+.f-controls {
+  margin: 20px;
+}
+
+.float-right {
+  position: relative;
+  left: 50%;
+}
+
+.slide {
+  width: 50px;
+  height: 200px;
+  border: 1px solid;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.slide-control {
+  width: 5px;
+  height: 90%;
+  background: black;
+  margin: 0 auto;
+}
+.seq,
+.play {
+  margin: 20px 0;
+}
+
+.seq div {
+  text-align: center;
+}
+
+.seq div button {
+  padding: 5px 15px;
+  margin: 0 10px;
+}
+
+.play div {
+  text-align: center;
+}
+
+.play div button {
+  padding: 20px;
+  margin: 0 5px;
+}
+
+.row {
+  height: 100px;
+  display: inline-flex;
+  flex-flow: wrap;
+}
+
+.drumpad {
+  border: 1px solid;
+  margin: 10px;
+  padding: 89px;
+  background: gray;
+}
+
+.inactive {
+  box-shadow: 0px 2px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.wheel-shadow {
+  box-shadow: 0px 2px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.wheel {
+  position: relative;
+}
+.wheel-circle {
+  width: 30px;
+  height: 30px;
+  background: gray;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  box-shadow: 0px 0px 0.1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  box-shadow: 0px 0px 0.1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 5px 7px rgba(0, 0, 0, 0.2);
+}
